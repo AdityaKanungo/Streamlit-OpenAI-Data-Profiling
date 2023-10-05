@@ -2,8 +2,7 @@ import openai
 import json
 
 # Initialize the OpenAI API (you'll need your API key)
-openai.api_key = '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'
-
+openai.api_key = ''
 def format_metadata_for_prompt(metadata):
     tables = list(metadata.keys())
     columns = {table: [col['name'] for col in metadata[table]['columns']] for table in tables}
